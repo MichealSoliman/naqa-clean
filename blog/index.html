@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مدونة نقاء كلين - نصائح وإرشادات مفيدة للحفاظ على نظافة منزلك، أحدث أساليب التنظيف، ونصائح العناية بالمنزل">
+    <meta name="keywords" content="نصائح تنظيف, مدونة نظافة, تنظيف منزلي, نقاء كلين مدونة, نصائح تنظيف المنزل">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="مدونة نقاء كلين - نصائح وإرشادات النظافة">
+    <meta property="og:description" content="اكتشف أفضل النصائح والإرشادات للحفاظ على نظافة منزلك">
+    <meta property="og:type" content="website">
+    
+    <title>مدونة نقاء كلين - نصائح وإرشادات النظافة المنزلية</title>
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        :root {
+            --primary-color: #153052;
+            --secondary-color: #2d91cf;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary-color);
+        }
+        
+        .bg-secondary {
+            background-color: var(--secondary-color);
+        }
+        
+        .text-primary {
+            color: var(--primary-color);
+        }
+        
+        .text-secondary {
+            color: var(--secondary-color);
+        }
+        
+        .blog-card {
+            transition: all 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(45, 145, 207, 0.2);
+        }
+        
+        .category-badge {
+            transition: all 0.3s ease;
+        }
+        
+        .category-badge:hover {
+            transform: scale(1.05);
+        }
+        
+        .search-input:focus {
+            box-shadow: 0 0 0 3px rgba(45, 145, 207, 0.2);
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#153052',
+                        secondary: '#2d91cf',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-primary to-secondary text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="flex items-center space-x-3 space-x-reverse">
+                    <div class="bg-white rounded-full p-2">
+                        <i class="fas fa-spray-can text-2xl text-secondary"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold">نقاء كلين</h1>
+                        <p class="text-xs">مدونة النظافة</p>
+                    </div>
+                </a>
+                
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <a href="../index.html" class="hidden md:block hover:text-yellow-300 transition duration-300">
+                        <i class="fas fa-home ml-1"></i>
+                        الرئيسية
+                    </a>
+                    <a href="../index.html#services" class="hidden md:block hover:text-yellow-300 transition duration-300">
+                        خدماتنا
+                    </a>
+                    <a href="../index.html#contact" class="bg-white text-primary px-6 py-2 rounded-full hover:bg-yellow-400 transition duration-300 font-semibold">
+                        اتصل بنا
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary via-secondary to-primary text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6" data-aos="fade-down">
+                <i class="fas fa-book-open ml-3"></i>
+                مدونة نقاء كلين
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                نصائح وإرشادات احترافية للحفاظ على نظافة منزلك وصحة عائلتك
+            </p>
+            
+            <!-- Search Bar -->
+            <div class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+                <div class="relative">
+                    <input type="text" id="search-input" 
+                           placeholder="ابحث عن مقالات..."
+                           class="search-input w-full px-6 py-4 pr-14 rounded-full text-gray-800 focus:outline-none text-lg">
+                    <button class="absolute left-4 top-1/2 transform -translate-y-1/2 text-secondary text-2xl">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Filter -->
+    <section class="bg-white py-8 shadow-md sticky top-16 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-3">
+                <button class="category-filter category-badge active bg-secondary text-white px-6 py-2 rounded-full font-semibold" data-category="all">
+                    <i class="fas fa-th ml-2"></i>
+                    الكل
+                </button>
+                <button class="category-filter category-badge bg-gray-200 text-primary px-6 py-2 rounded-full font-semibold hover:bg-secondary hover:text-white" data-category="تنظيف منازل">
+                    <i class="fas fa-home ml-2"></i>
+                    تنظيف منازل
+                </button>
+                <button class="category-filter category-badge bg-gray-200 text-primary px-6 py-2 rounded-full font-semibold hover:bg-secondary hover:text-white" data-category="نصائح">
+                    <i class="fas fa-lightbulb ml-2"></i>
+                    نصائح
+                </button>
+                <button class="category-filter category-badge bg-gray-200 text-primary px-6 py-2 rounded-full font-semibold hover:bg-secondary hover:text-white" data-category="تعقيم">
+                    <i class="fas fa-shield-virus ml-2"></i>
+                    تعقيم
+                </button>
+                <button class="category-filter category-badge bg-gray-200 text-primary px-6 py-2 rounded-full font-semibold hover:bg-secondary hover:text-white" data-category="صيانة">
+                    <i class="fas fa-tools ml-2"></i>
+                    صيانة
+                </button>
+                <button class="category-filter category-badge bg-gray-200 text-primary px-6 py-2 rounded-full font-semibold hover:bg-secondary hover:text-white" data-category="العناية بالمنزل">
+                    <i class="fas fa-heart ml-2"></i>
+                    العناية بالمنزل
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-posts">
+                
+                <!-- Blog Post 1 -->
+                <article class="blog-card blog-item bg-white rounded-2xl shadow-lg overflow-hidden" data-category="نصائح" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="نصائح تنظيف المنزل" class="w-full h-56 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">نصائح</span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar-alt ml-1"></i>
+                                15 ديسمبر 2024
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3 hover:text-secondary transition duration-300">
+                            <a href="post1.html">10 نصائح للحفاظ على نظافة المنزل يومياً</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            اكتشف أفضل الطرق والنصائح للحفاظ على منزلك نظيفاً ومرتباً طوال الوقت بأقل مجهود ممكن. نصائح عملية وسهلة التطبيق...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <a href="post1.html" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                                اقرأ المزيد
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock ml-1"></i>
+                                <span>5 دقائق قراءة</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card blog-item bg-white rounded-2xl shadow-lg overflow-hidden" data-category="تعقيم" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=600&q=80" alt="أهمية التعقيم" class="w-full h-56 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">تعقيم</span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar-alt ml-1"></i>
+                                12 ديسمبر 2024
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3 hover:text-secondary transition duration-300">
+                            <a href="post2.html">أهمية التعقيم المنتظم لمنزلك</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            تعرف على أهمية التعقيم الدوري وكيف يحمي عائلتك من الجراثيم والأمراض. دليل شامل للتعقيم الصحيح والآمن...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <a href="post2.html" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                                اقرأ المزيد
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock ml-1"></i>
+                                <span>7 دقائق قراءة</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card blog-item bg-white rounded-2xl shadow-lg overflow-hidden" data-category="تنظيف منازل" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&q=80" alt="تنظيف السجاد" class="w-full h-56 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">تنظيف منازل</span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar-alt ml-1"></i>
+                                10 ديسمبر 2024
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3 hover:text-secondary transition duration-300">
+                            <a href="post3.html">دليل شامل لتنظيف السجاد والموكيت</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            طرق احترافية لتنظيف السجاد والموكيت وإزالة البقع الصعبة والروائح الكريهة. خطوات عملية ونتائج مضمونة...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <a href="post3.html" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                                اقرأ المزيد
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock ml-1"></i>
+                                <span>6 دقائق قراءة</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card blog-item bg-white rounded-2xl shadow-lg overflow-hidden" data-category="صيانة" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="تنظيف الخزانات" class="w-full h-56 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">صيانة</span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar-alt ml-1"></i>
+                                8 ديسمبر 2024
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3 hover:text-secondary transition duration-300">
+                            <a href="#">كيفية تنظيف وصيانة خزانات المياه</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            دليل كامل لتنظيف وصيانة خزانات المياه للحفاظ على نقاء وصحة المياه. طرق آمنة ومواد موصى بها...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                                اقرأ المزيد
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock ml-1"></i>
+                                <span>8 دقائق قراءة</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card blog-item bg-white rounded-2xl shadow-lg overflow-hidden" data-category="العناية بالمنزل" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&q=80" alt="العناية بالأثاث" class="w-full h-56 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-semibold">العناية بالمنزل</span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar-alt ml-1"></i>
+                                5 ديسمبر 2024
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3 hover:text-secondary transition duration-300">
+                            <a href="#">كيفية العناية بالأثاث المنزلي وإطالة عمره</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            نصائح احترافية للعناية بأثاث منزلك والحفاظ عليه في حالة ممتازة لسنوات طويلة. طرق التنظيف والصيانة الصحيحة...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                                اقرأ المزيد
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock ml-1"></i>
+                                <span>5 دقائق قراءة</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card blog-item bg-white rounded-2xl shadow-lg overflow-hidden" data-category="نصائح" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="تنظيف المطبخ" class="w-full h-56 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">نصائح</span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar-alt ml-1"></i>
+                                3 ديسمبر 2024
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3 hover:text-secondary transition duration-300">
+                            <a href="#">أسرار تنظيف المطبخ بسرعة وفعالية</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            اكتشف أفضل الطرق لتنظيف المطبخ بشكل سريع وفعال. نصائح لإزالة الدهون والبقع الصعبة وتعقيم الأسطح...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                                اقرأ المزيد
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock ml-1"></i>
+                                <span>4 دقائق قراءة</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 7 -->
+                <article class="blog-card blog-item bg-white rounded-2xl shadow-lg overflow-hidden" data-category="تعقيم" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80" alt="تعقيم الحمامات" class="w-full h-56 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">تعقيم</span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar-alt ml-1"></i>
+                                1 ديسمبر 2024
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3 hover:text-secondary transition duration-300">
+                            <a href="#">أفضل طرق تعقيم الحمامات والمراحيض</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            دليل شامل لتعقيم الحمامات بطريقة صحيحة وآمنة. المواد الموصى بها والخطوات الأساسية للتعقيم الفعال...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                                اقرأ المزيد
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock ml-1"></i>
+                                <span>6 دقائق قراءة</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 8 -->
+                <article class="blog-card blog-item bg-white rounded-2xl shadow-lg overflow-hidden" data-category="تنظيف منازل" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80" alt="تنظيف الفلل" class="w-full h-56 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">تنظيف منازل</span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar-alt ml-1"></i>
+                                28 نوفمبر 2024
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3 hover:text-secondary transition duration-300">
+                            <a href="#">خطوات تنظيف الفلل الكبيرة بكفاءة</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            تعلم كيفية تنظيف الفلل الكبيرة بطريقة منظمة وفعالة. خطة عمل احترافية لتنظيف شامل وسريع...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                                اقرأ المزيد
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock ml-1"></i>
+                                <span>9 دقائق قراءة</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 9 -->
+                <article class="blog-card blog-item bg-white rounded-2xl shadow-lg overflow-hidden" data-category="نصائح" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1563298723-dcfebaa392e3?w=600&q=80" alt="أدوات التنظيف" class="w-full h-56 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">نصائح</span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar-alt ml-1"></i>
+                                25 نوفمبر 2024
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3 hover:text-secondary transition duration-300">
+                            <a href="#">أفضل أدوات التنظيف المنزلي الضرورية</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            قائمة شاملة بأفضل أدوات التنظيف المنزلي التي يجب أن تمتلكها في منزلك. أدوات فعالة وعملية...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                                اقرأ المزيد
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock ml-1"></i>
+                                <span>5 دقائق قراءة</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            
+            <!-- No Results Message -->
+            <div id="no-results" class="hidden text-center py-16">
+                <i class="fas fa-search text-6xl text-gray-300 mb-4"></i>
+                <h3 class="text-2xl font-bold text-gray-600 mb-2">لم نجد نتائج</h3>
+                <p class="text-gray-500">جرب البحث بكلمات مختلفة أو اختر تصنيف آخر</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">هل تحتاج لخدمات تنظيف احترافية؟</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                نحن هنا لمساعدتك! احصل على خدمة تنظيف احترافية بأعلى جودة
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 md:space-x-reverse" data-aos="fade-up" data-aos-delay="400">
+                <a href="../index.html#contact" class="bg-white text-primary px-10 py-4 rounded-full text-lg font-semibold hover:bg-yellow-400 hover:text-primary transition duration-300 shadow-lg">
+                    <i class="fas fa-rocket ml-2"></i>
+                    اطلب خدمة الآن
+                </a>
+                <a href="tel:0592425077" class="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-primary transition duration-300">
+                    <i class="fas fa-phone-alt ml-2"></i>
+                    اتصل بنا: 0592425077
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-primary to-secondary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">نقاء كلين</h3>
+                    <p class="text-gray-200 leading-relaxed mb-4">
+                        شركة رائدة في مجال خدمات النظافة الاحترافية في الرياض
+                    </p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-200 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="../index.html#services" class="text-gray-200 hover:text-white transition duration-300">خدماتنا</a></li>
+                        <li><a href="../index.html#about" class="text-gray-200 hover:text-white transition duration-300">من نحن</a></li>
+                        <li><a href="../index.html#contact" class="text-gray-200 hover:text-white transition duration-300">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">تواصل معنا</h4>
+                    <ul class="space-y-3 text-gray-200">
+                        <li>
+                            <i class="fas fa-phone-alt ml-2"></i>
+                            <a href="tel:0592425077" class="hover:text-white transition duration-300">0592425077</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope ml-2"></i>
+                            <a href="mailto:info@naqaclean.com" class="hover:text-white transition duration-300">info@naqaclean.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            الرياض، المملكة العربية السعودية
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white border-opacity-20 pt-6 text-center">
+                <p>&copy; 2024 نقاء كلين. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Category Filter
+        const categoryFilters = document.querySelectorAll('.category-filter');
+        const blogItems = document.querySelectorAll('.blog-item');
+        const noResults = document.getElementById('no-results');
+
+        categoryFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                const category = filter.getAttribute('data-category');
+                
+                // Update active button
+                categoryFilters.forEach(btn => {
+                    btn.classList.remove('active', 'bg-secondary', 'text-white');
+                    btn.classList.add('bg-gray-200', 'text-primary');
+                });
+                filter.classList.remove('bg-gray-200', 'text-primary');
+                filter.classList.add('active', 'bg-secondary', 'text-white');
+                
+                // Filter items
+                let visibleCount = 0;
+                blogItems.forEach(item => {
+                    const itemCategory = item.getAttribute('data-category');
+                    
+                    if (category === 'all' || itemCategory === category) {
+                        item.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                
+                // Show/hide no results message
+                if (visibleCount === 0) {
+                    noResults.classList.remove('hidden');
+                } else {
+                    noResults.classList.add('hidden');
+                }
+            });
+        });
+
+        // Search Functionality
+        const searchInput = document.getElementById('search-input');
+        
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            let visibleCount = 0;
+            
+            blogItems.forEach(item => {
+                const title = item.querySelector('h3').textContent.toLowerCase();
+                const description = item.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    item.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            
+            // Show/hide no results message
+            if (visibleCount === 0 && searchTerm !== '') {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+            
+            // Reset category filter when searching
+            if (searchTerm !== '') {
+                categoryFilters.forEach(btn => {
+                    btn.classList.remove('active', 'bg-secondary', 'text-white');
+                    btn.classList.add('bg-gray-200', 'text-primary');
+                });
+                categoryFilters[0].classList.add('active', 'bg-secondary', 'text-white');
+                categoryFilters[0].classList.remove('bg-gray-200', 'text-primary');
+            }
+        });
+    </script>
+
+</body>
+</html>
