@@ -618,3 +618,60 @@ document.querySelectorAll('img').forEach(img => {
 });
 
 console.log('✅ جميع السكريبتات تم تحميلها بنجاح!');
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Counter animation
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // The lower the slower
+    
+    const animateCounter = (counter) => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const inc = target / speed;
+        
+        if (count < target) {
+            counter.innerText = Math.ceil(count + inc);
+            setTimeout(() => animateCounter(counter), 10);
+        } else {
+            counter.innerText = target.toLocaleString();
+        }
+    };
+    
+    // Intersection Observer for counter animation
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    counters.forEach(counter => observer.observe(counter));
+    
+    // Particles generation
+    const particlesContainer = document.querySelector('.particles-container');
+    for (let i = 0; i < 20; i++) {
+        const particle = document.createElement('div');
+        particle.style.cssText = `
+            position: absolute;
+            width: ${Math.random() * 3 + 1}px;
+            height: ${Math.random() * 3 + 1}px;
+            background: white;
+            border-radius: 50%;
+            top: ${Math.random() * 100}%;
+            left: ${Math.random() * 100}%;
+            animation: particleMove ${Math.random() * 20 + 10}s linear infinite;
+            animation-delay: ${Math.random() * 10}s;
+            opacity: ${Math.random() * 0.3 + 0.1};
+        `;
+        particlesContainer.appendChild(particle);
+    }
+});

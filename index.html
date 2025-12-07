@@ -312,8 +312,8 @@
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3 space-x-reverse">
-                    <div class="bg-white rounded-full p-2">
-                        <i class="fas fa-spray-can text-3xl text-secondary"></i>
+                    <div class="bg-white rounded-full p-2 h-16 w-16">
+                        <img src="./asstes/img/logo.txt" alt="">
                     </div>
                     <div>
                         <h1 class="text-2xl font-bold text-white">نقاء كلين</h1>
@@ -364,7 +364,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg min-h-screen flex items-center justify-center relative">
+    <section id="home" class="hero-bg min-h-[800px] flex items-center justify-center relative">
         <div class="container mx-auto px-4 text-center text-white z-10">
             <h2 class="text-5xl md:text-7xl font-bold mb-6" data-aos="fade-down" data-aos-duration="1000">
                 نقاء كلين
@@ -421,7 +421,7 @@
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
+            <div class="text-center mb-16" data-aos="">
                 <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">من نحن</h2>
                 <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -464,231 +464,418 @@
                 </div>
             </div>
             
-            <!-- Video Section -->
-            <div class="mt-16 text-center" data-aos="fade-up" data-aos-delay="400">
-                <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-12 text-white">
-                    <h3 class="text-3xl font-bold mb-4">شاهد فريقنا أثناء العمل</h3>
-                    <p class="text-xl mb-6">احترافية وجودة في كل تفصيل</p>
-                    <div class="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80" alt="فريق نقاء كلين" class="w-full h-auto" loading="lazy">
-                    </div>
-                </div>
+<!-- Work Showcase Section -->
+<div class="mt-20" data-aos="fade-up" data-aos-delay="300">
+    <div class="bg-white rounded-2xl shadow-xl p-10">
+
+        <!-- Title -->
+        <div class="text-center mb-10">
+            <h3 class="text-3xl font-bold text-primary mb-4">نتائج أعمالنا قبل وبعد</h3>
+            <p class="text-lg text-gray-600">فرق واضح تقدر تشوفه بنفسك</p>
+        </div>
+
+        <!-- Before / After -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
+
+            <!-- Before -->
+            <div class="relative w-full">
+                <span class="absolute top-4 left-4 bg-primary text-white px-4 py-1 rounded-xl text-sm font-bold shadow-lg">
+                    قبل
+                </span>
+                <img src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=800&q=80" 
+                     alt="before cleaning"
+                     class="rounded-2xl shadow-lg w-full object-cover h-[350px]" loading="lazy">
             </div>
+
+            <!-- After -->
+            <div class="relative w-full">
+                <span class="absolute top-4 left-4 bg-green-600 text-white px-4 py-1 rounded-xl text-sm font-bold shadow-lg">
+                    بعد
+                </span>
+                <img src="https://images.unsplash.com/photo-1600585153085-cdbea4a430d5?w=800&q=80" 
+                     alt="after cleaning"
+                     class="rounded-2xl shadow-lg w-full object-cover h-[350px]" loading="lazy">
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-12">
+            <a href="https://wa.me/966000000000" target="_blank"
+               class="bg-primary hover:bg-secondary transition text-white px-10 py-4 rounded-2xl text-xl font-bold shadow-lg inline-block">
+                احجز تنظيفك الآن
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">خدماتنا</h2>
-                <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    نقدم مجموعة شاملة من خدمات النظافة الاحترافية التي تلبي جميع احتياجاتك
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- تنظيف منازل -->
-                <div class="service-card bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg p-8 border-2 border-transparent hover:border-secondary" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bg-gradient-to-br from-primary to-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-home text-3xl text-white"></i>
+<!-- Services Section -->
+<section id="services" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">خدماتنا</h2>
+            <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                نقدم مجموعة شاملة من خدمات النظافة الاحترافية التي تلبي جميع احتياجاتك
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- تنظيف منازل -->
+            <div class="service-card group bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent hover:border-secondary transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+                <!-- صورة الخدمة -->
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="تنظيف منازل"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div class="absolute bottom-4 right-4">
+                        <div class="bg-gradient-to-br from-primary to-secondary w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fas fa-home text-xl text-white"></i>
+                        </div>
                     </div>
+                </div>
+                
+                <!-- محتوى الخدمة -->
+                <div class="p-6">
                     <h3 class="text-2xl font-bold text-primary mb-4">تنظيف منازل</h3>
                     <p class="text-gray-600 mb-6">
                         تنظيف شامل للمنازل بجميع أحجامها مع الاهتمام بأدق التفاصيل
                     </p>
                     <ul class="space-y-3 mb-6">
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.1s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>أدوات متطورة وحديثة</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.2s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>مواد تنظيف آمنة ومعتمدة</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.3s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>فريق متخصص ومدرب</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.4s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>ضمان جودة 100%</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition duration-300">
-                        اطلب الخدمة
-                        <i class="fas fa-arrow-left mr-2"></i>
+                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
+                        <span class="flex items-center justify-center">
+                            اطلب الخدمة
+                            <i class="fas fa-arrow-left mr-2 animate-bounce-x"></i>
+                        </span>
                     </a>
                 </div>
-                
-                <!-- تنظيف فلل -->
-                <div class="service-card bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg p-8 border-2 border-transparent hover:border-secondary" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-gradient-to-br from-secondary to-primary w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-building text-3xl text-white"></i>
+            </div>
+            
+            <!-- تنظيف فلل -->
+            <div class="service-card group bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent hover:border-secondary transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+                <!-- صورة الخدمة -->
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="تنظيف فلل"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div class="absolute bottom-4 right-4">
+                        <div class="bg-gradient-to-br from-secondary to-primary w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fas fa-building text-xl text-white"></i>
+                        </div>
                     </div>
+                </div>
+                
+                <!-- محتوى الخدمة -->
+                <div class="p-6">
                     <h3 class="text-2xl font-bold text-primary mb-4">تنظيف فلل متكامل</h3>
                     <p class="text-gray-600 mb-6">
                         تنظيف شامل للفلل (غرف، مطبخ، حمامات، حدائق) مع تعقيم كامل
                     </p>
                     <ul class="space-y-3 mb-6">
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.1s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>تنظيف جميع الغرف والمرافق</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.2s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>تنظيف الحدائق والمساحات الخارجية</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.3s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>إزالة البقع الصعبة</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.4s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>تعقيم شامل للفيلا</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition duration-300">
-                        اطلب الخدمة
-                        <i class="fas fa-arrow-left mr-2"></i>
+                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
+                        <span class="flex items-center justify-center">
+                            اطلب الخدمة
+                            <i class="fas fa-arrow-left mr-2 animate-bounce-x"></i>
+                        </span>
                     </a>
                 </div>
-                
-                <!-- تنظيف شقق -->
-                <div class="service-card bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg p-8 border-2 border-transparent hover:border-secondary" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-gradient-to-br from-primary to-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-door-open text-3xl text-white"></i>
+            </div>
+            
+            <!-- تنظيف شقق -->
+            <div class="service-card group bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent hover:border-secondary transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
+                <!-- صورة الخدمة -->
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="تنظيف شقق"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div class="absolute bottom-4 right-4">
+                        <div class="bg-gradient-to-br from-primary to-secondary w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fas fa-door-open text-xl text-white"></i>
+                        </div>
                     </div>
+                </div>
+                
+                <!-- محتوى الخدمة -->
+                <div class="p-6">
                     <h3 class="text-2xl font-bold text-primary mb-4">تنظيف شقق</h3>
                     <p class="text-gray-600 mb-6">
                         خدمة تنظيف احترافية للشقق بجميع أحجامها ومساحاتها
                     </p>
                     <ul class="space-y-3 mb-6">
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.1s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>تنظيف سريع وفعّال</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.2s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>مواعيد مرنة تناسبك</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.3s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>أسعار تنافسية ومناسبة</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.4s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>عناية بالأثاث والديكور</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition duration-300">
-                        اطلب الخدمة
-                        <i class="fas fa-arrow-left mr-2"></i>
+                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
+                        <span class="flex items-center justify-center">
+                            اطلب الخدمة
+                            <i class="fas fa-arrow-left mr-2 animate-bounce-x"></i>
+                        </span>
                     </a>
                 </div>
-                
-                <!-- تنظيف مجالس وسجاد -->
-                <div class="service-card bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg p-8 border-2 border-transparent hover:border-secondary" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bg-gradient-to-br from-secondary to-primary w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-couch text-3xl text-white"></i>
+            </div>
+            
+            <!-- تنظيف مجالس وسجاد -->
+            <div class="service-card group bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent hover:border-secondary transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+                <!-- صورة الخدمة -->
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="تنظيف مجالس وسجاد"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div class="absolute bottom-4 right-4">
+                        <div class="bg-gradient-to-br from-secondary to-primary w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fas fa-couch text-xl text-white"></i>
+                        </div>
                     </div>
+                </div>
+                
+                <!-- محتوى الخدمة -->
+                <div class="p-6">
                     <h3 class="text-2xl font-bold text-primary mb-4">تنظيف مجالس وسجاد</h3>
                     <p class="text-gray-600 mb-6">
                         تنظيف عميق للمجالس والسجاد والموكيت بأحدث التقنيات
                     </p>
                     <ul class="space-y-3 mb-6">
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.1s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>تنظيف بالبخار الساخن</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.2s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>إزالة البقع والروائح</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.3s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>تجفيف سريع وفعّال</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.4s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>معطرات آمنة وطويلة المفعول</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition duration-300">
-                        اطلب الخدمة
-                        <i class="fas fa-arrow-left mr-2"></i>
+                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
+                        <span class="flex items-center justify-center">
+                            اطلب الخدمة
+                            <i class="fas fa-arrow-left mr-2 animate-bounce-x"></i>
+                        </span>
                     </a>
                 </div>
-                
-                <!-- تعقيم شامل -->
-                <div class="service-card bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg p-8 border-2 border-transparent hover:border-secondary" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-gradient-to-br from-primary to-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-shield-virus text-3xl text-white"></i>
+            </div>
+            
+            <!-- تعقيم شامل -->
+            <div class="service-card group bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent hover:border-secondary transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+                <!-- صورة الخدمة -->
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1585412727339-54e4bae3bbf8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="تعقيم احترافي"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div class="absolute bottom-4 right-4">
+                        <div class="bg-gradient-to-br from-primary to-secondary w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fas fa-shield-virus text-xl text-white"></i>
+                        </div>
                     </div>
+                </div>
+                
+                <!-- محتوى الخدمة -->
+                <div class="p-6">
                     <h3 class="text-2xl font-bold text-primary mb-4">تعقيم احترافي</h3>
                     <p class="text-gray-600 mb-6">
                         خدمة تعقيم شاملة لحمايتك وحماية عائلتك من الجراثيم
                     </p>
                     <ul class="space-y-3 mb-6">
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.1s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>مواد تعقيم آمنة ومعتمدة</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.2s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>قضاء على 99.9% من الجراثيم</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.3s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>آمن للأطفال والحيوانات</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.4s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>مفعول طويل الأمد</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition duration-300">
-                        اطلب الخدمة
-                        <i class="fas fa-arrow-left mr-2"></i>
+                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
+                        <span class="flex items-center justify-center">
+                            اطلب الخدمة
+                            <i class="fas fa-arrow-left mr-2 animate-bounce-x"></i>
+                        </span>
                     </a>
                 </div>
-                
-                <!-- تنظيف خزانات -->
-                <div class="service-card bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg p-8 border-2 border-transparent hover:border-secondary" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-gradient-to-br from-secondary to-primary w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-water text-3xl text-white"></i>
+            </div>
+            
+            <!-- تنظيف خزانات -->
+            <div class="service-card group bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent hover:border-secondary transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
+                <!-- صورة الخدمة -->
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1621341838372-38e1d3fec0c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="تنظيف خزانات المياه"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div class="absolute bottom-4 right-4">
+                        <div class="bg-gradient-to-br from-secondary to-primary w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fas fa-water text-xl text-white"></i>
+                        </div>
                     </div>
+                </div>
+                
+                <!-- محتوى الخدمة -->
+                <div class="p-6">
                     <h3 class="text-2xl font-bold text-primary mb-4">تنظيف خزانات المياه</h3>
                     <p class="text-gray-600 mb-6">
                         تنظيف وتعقيم خزانات المياه بمعايير عالمية للحفاظ على صحتك
                     </p>
                     <ul class="space-y-3 mb-6">
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.1s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>تنظيف عميق للخزانات</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.2s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>تعقيم شامل للمياه</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.3s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>فحص واختبار جودة المياه</span>
                         </li>
-                        <li class="flex items-center text-gray-700">
-                            <i class="fas fa-check-circle text-secondary ml-2"></i>
+                        <li class="flex items-center text-gray-700 animate-fadeIn" style="animation-delay: 0.4s">
+                            <i class="fas fa-check-circle text-secondary ml-2 animate-pulse"></i>
                             <span>شهادة معتمدة بعد الخدمة</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition duration-300">
-                        اطلب الخدمة
-                        <i class="fas fa-arrow-left mr-2"></i>
+                    <a href="#contact" class="btn-primary block text-center text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
+                        <span class="flex items-center justify-center">
+                            اطلب الخدمة
+                            <i class="fas fa-arrow-left mr-2 animate-bounce-x"></i>
+                        </span>
                     </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<style>
+/* أنماط CSS للرسوم المتحركة الإضافية */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceX {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-bounce-x {
+    animation: bounceX 1s infinite;
+}
+
+.service-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.service-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+}
+
+/* تنسيق الأيقونات */
+.fa-check-circle {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* تأثيرات للصور عند التمرير */
+.group:hover img {
+    filter: brightness(1.1);
+}
+
+/* تحسين التدرج اللوني */
+.bg-gradient-to-br {
+    background-size: 200% 200%;
+}
+
+.group:hover .bg-gradient-to-br {
+    background-position: 100% 100%;
+}
+</style>
 
     <!-- Why Choose Us Section -->
     <section id="why-us" class="py-20 bg-gradient-to-br from-primary to-secondary text-white">
@@ -789,6 +976,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- Featured Service / Promo Section -->
     <section class="py-20 bg-white">
@@ -1225,106 +1414,142 @@
     </section>
 
     <!-- Service Areas Section -->
-    <section id="service-areas" class="py-20 bg-gradient-to-br from-gray-50 to-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">مناطق الخدمة</h2>
-                <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    نغطي أكثر من 50 حياً في مدينة الرياض
-                </p>
+<section id="service-areas" class="py-20 bg-gradient-to-br from-gray-50 to-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">مناطق الخدمة</h2>
+      <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        نغطي أكثر من 50 حياً في مدينة الرياض
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      
+      <!-- الأحياء المغطاة -->
+      <div data-aos="fade-left" class="space-y-6">
+        <h3 class="text-3xl font-bold text-primary mb-4">الأحياء المغطاة</h3>
+        <p class="opacity-90 text-lg">نخدم جميع أنحاء مدينة الرياض وأكثر من 40 حي إضافي</p>
+        
+        <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-200">
+          <div class="grid grid-cols-2 gap-4">
+
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي العليا</span>
             </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div data-aos="fade-left">
-                    <h3 class="text-3xl font-bold text-primary mb-6">الأحياء المغطاة</h3>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي العليا</span>
-                        </div>
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي الملقا</span>
-                        </div>
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي النرجس</span>
-                        </div>
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي الياسمين</span>
-                        </div>
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي الروضة</span>
-                        </div>
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي المروج</span>
-                        </div>
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي الربيع</span>
-                        </div>
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي العقيق</span>
-                        </div>
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي الورود</span>
-                        </div>
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي النخيل</span>
-                        </div>
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي الغدير</span>
-                        </div>
-                        <div class="flex items-center space-x-3 space-x-reverse">
-                            <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
-                            <span class="text-gray-700">حي الفلاح</span>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mt-6 leading-relaxed">
-                        وأكثر من 40 حياً آخر في جميع أنحاء الرياض. اتصل بنا للتأكد من تغطية منطقتك!
-                    </p>
-                    <a href="#contact" class="btn-primary inline-block mt-6 text-white px-8 py-3 rounded-full font-semibold shadow-lg">
-                        <i class="fas fa-phone-alt ml-2"></i>
-                        تحقق من تغطية منطقتك
-                    </a>
-                </div>
-                
-                <div data-aos="fade-right">
-                    <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 text-white shadow-2xl">
-                        <div class="text-center mb-6">
-                            <i class="fas fa-map-marked-alt text-8xl opacity-20"></i>
-                        </div>
-                        <h4 class="text-2xl font-bold mb-4 text-center">خدمة سريعة في جميع أنحاء الرياض</h4>
-                        <p class="text-lg text-center mb-6">
-                            نصلك أينما كنت في الرياض خلال 24 ساعة من الحجز
-                        </p>
-                        <div class="grid grid-cols-3 gap-4 text-center">
-                            <div>
-                                <div class="text-4xl font-bold mb-2">50+</div>
-                                <div class="text-sm">حي مغطى</div>
-                            </div>
-                            <div>
-                                <div class="text-4xl font-bold mb-2">24</div>
-                                <div class="text-sm">ساعة توصل</div>
-                            </div>
-                            <div>
-                                <div class="text-4xl font-bold mb-2">100%</div>
-                                <div class="text-sm">تغطية الرياض</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي الملقا</span>
             </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي النرجس</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي الياسمين</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي الروضة</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي المروج</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي الربيع</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي العقيق</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي الورود</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي النخيل</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي الغدير</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي الفلاح</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي الصحافة</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي الحمراء</span>
+            </div>
+            <div class="flex items-center space-x-3 space-x-reverse hover:text-primary transition duration-300">
+              <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+              <span class="text-gray-700">حي الروابي</span>
+            </div>
+            <!-- ممكن تكمل باقي الأحياء بنفس الشكل -->
+          </div>
+
+          <p class="text-gray-600 mt-6 leading-relaxed">
+            وأكثر من 40 حياً آخر في جميع أنحاء الرياض. اتصل بنا للتأكد من تغطية منطقتك!
+          </p>
+
+          <a href="#contact" class="btn-primary inline-block mt-6 text-white px-8 py-3 rounded-full font-semibold shadow-lg">
+            <i class="fas fa-phone-alt ml-2"></i>
+            تحقق من تغطية منطقتك
+          </a>
         </div>
-    </section>
+      </div>
+
+      <!-- خريطة الرياض -->
+      <div data-aos="fade-right">
+        <div class="rounded-2xl overflow-hidden shadow-inner border border-gray-200">
+          <div class="bg-gradient-to-r from-primary to-secondary p-6 text-white text-center">
+            <h4 class="text-3xl font-bold mb-2">نغطي جميع أحياء مدينة الرياض</h4>
+            <p class="text-lg opacity-90">خدمة سريعة ونصل إليك خلال 24 ساعة في أي مكان بالرياض</p>
+          </div>
+          <div class="w-full h-[350px]"> <!-- تم تصغير الارتفاع -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d362362.4733393026!2d46.3878479!3d24.7241507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee27cf294aa8f%3A0xa46b8dacf6a80ee!2z2KfZhNmF2YTYsdin2YUg2KfZhNmF2K3Yp9ix2KfZhQ!5e0!3m2!1sar!2ssa!4v1700000000000"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <div class="bg-white p-6 grid grid-cols-3 text-center gap-4">
+            <div>
+              <div class="text-3xl font-bold text-primary">50+</div>
+              <div class="text-gray-600 text-sm">حي مغطى</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-primary">24</div>
+              <div class="text-gray-600 text-sm">ساعة توصيل</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-primary">100%</div>
+              <div class="text-gray-600 text-sm">تغطية الرياض</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-white">
