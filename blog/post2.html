@@ -14,20 +14,77 @@
     
     <style>
         * { font-family: 'Tajawal', sans-serif; }
-        :root { --primary-color: #153052; --secondary-color: #2d91cf; }
+        :root {
+            --primary-color: #153052;
+            --secondary-color: #2d91cf;
+        }
         .bg-primary { background-color: var(--primary-color); }
         .bg-secondary { background-color: var(--secondary-color); }
         .text-primary { color: var(--primary-color); }
         .text-secondary { color: var(--secondary-color); }
-        .article-content h2 { font-size: 1.8rem; font-weight: 700; color: var(--primary-color); margin-top: 2rem; margin-bottom: 1rem; }
-        .article-content p { line-height: 2; color: #374151; margin-bottom: 1.25rem; }
-        .article-content ul { margin: 1.5rem 0; padding-right: 2rem; }
-        .article-content li { margin-bottom: 0.75rem; line-height: 1.8; }
-        .tip-box { background: linear-gradient(135deg, rgba(45,145,207,0.1), rgba(21,48,82,0.05)); border-right: 4px solid var(--secondary-color); padding: 1.5rem; border-radius: 0.5rem; margin: 1.5rem 0; }
+        
+        .article-content h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-content p {
+            line-height: 2;
+            color: #374151;
+            margin-bottom: 1.25rem;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-right: 2rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+        
+        .article-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .tip-box {
+            background: linear-gradient(135deg, rgba(45,145,207,0.1), rgba(21,48,82,0.05));
+            border-right: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
     </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#153052',
+                        secondary: '#2d91cf',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-gray-50">
 
+    <!-- Header -->
     <header class="bg-gradient-to-r from-primary to-secondary text-white shadow-lg sticky top-0 z-50">
         <nav class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
@@ -40,6 +97,7 @@
                         <p class="text-xs">مدونة النظافة</p>
                     </div>
                 </a>
+                
                 <div class="flex items-center space-x-4 space-x-reverse">
                     <a href="../index.html" class="hidden md:block hover:text-yellow-300 transition duration-300">
                         <i class="fas fa-home ml-1"></i>
@@ -232,11 +290,19 @@
             </div>
         </div>
     </article>
-
+    <!-- Footer -->
     <footer class="bg-gradient-to-br from-primary to-secondary text-white py-12">
-        <div class="container mx-auto px-4 text-center">
-            <h3 class="text-2xl font-bold mb-4">نقاء كلين</h3>
-            <p>&copy; 2024 نقاء كلين. جميع الحقوق محفوظة.</p>
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">نقاء كلين</h3>
+                <p class="mb-4">شركة رائدة في مجال خدمات النظافة الاحترافية في الرياض</p>
+                <div class="flex justify-center space-x-4 space-x-reverse mb-6">
+                    <a href="#" class="hover:text-yellow-300 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-yellow-300 transition duration-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-yellow-300 transition duration-300"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="text-sm">&copy; 2024 نقاء كلين. جميع الحقوق محفوظة.</p>
+            </div>
         </div>
     </footer>
 

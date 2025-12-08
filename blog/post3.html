@@ -14,19 +14,73 @@
     
     <style>
         * { font-family: 'Tajawal', sans-serif; }
-        :root { --primary-color: #153052; --secondary-color: #2d91cf; }
+        :root {
+            --primary-color: #153052;
+            --secondary-color: #2d91cf;
+        }
         .bg-primary { background-color: var(--primary-color); }
         .bg-secondary { background-color: var(--secondary-color); }
         .text-primary { color: var(--primary-color); }
         .text-secondary { color: var(--secondary-color); }
-        .article-content h2 { font-size: 1.8rem; font-weight: 700; color: var(--primary-color); margin-top: 2rem; margin-bottom: 1rem; }
-        .article-content h3 { font-size: 1.4rem; font-weight: 600; color: var(--secondary-color); margin-top: 1.5rem; margin-bottom: 0.75rem; }
-        .article-content p { line-height: 2; color: #374151; margin-bottom: 1.25rem; }
-        .article-content ul, .article-content ol { margin: 1.5rem 0; padding-right: 2rem; }
-        .article-content li { margin-bottom: 0.75rem; line-height: 1.8; }
-        .tip-box { background: linear-gradient(135deg, rgba(45,145,207,0.1), rgba(21,48,82,0.05)); border-right: 4px solid var(--secondary-color); padding: 1.5rem; border-radius: 0.5rem; margin: 1.5rem 0; }
-        .stain-guide { background: #f3f4f6; border-radius: 1rem; padding: 1.5rem; margin: 1rem 0; }
+        
+        .article-content h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-content p {
+            line-height: 2;
+            color: #374151;
+            margin-bottom: 1.25rem;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-right: 2rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+        
+        .article-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .tip-box {
+            background: linear-gradient(135deg, rgba(45,145,207,0.1), rgba(21,48,82,0.05));
+            border-right: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
     </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#153052',
+                        secondary: '#2d91cf',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-gray-50">
 

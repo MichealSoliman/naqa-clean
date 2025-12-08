@@ -484,31 +484,7 @@ window.addEventListener('scroll', () => {
     scrollProgress.style.width = scrolled + '%';
 });
 
-// Add "Back to Top" button
-const backToTopBtn = document.createElement('button');
-backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
-backToTopBtn.className = 'fixed bottom-24 left-30 bg-primary text-white w-12 h-12 rounded-full shadow-lg hover:bg-secondary transition duration-300 opacity-0 pointer-events-none z-50';
-backToTopBtn.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-backToTopBtn.setAttribute('aria-label', 'العودة للأعلى');
 
-document.body.appendChild(backToTopBtn);
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
-        backToTopBtn.style.opacity = '1';
-        backToTopBtn.style.pointerEvents = 'auto';
-    } else {
-        backToTopBtn.style.opacity = '0';
-        backToTopBtn.style.pointerEvents = 'none';
-    }
-});
-
-backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
 
 // Add hover effect to back to top button
 backToTopBtn.addEventListener('mouseenter', () => {
