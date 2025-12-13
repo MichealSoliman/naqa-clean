@@ -482,58 +482,94 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gradient-to-br from-primary to-secondary text-white py-12">
+    <footer class="bg-gradient-to-br from-primary to-secondary text-white pt-16 pb-8">
         <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
                 <div>
-                    <h3 class="text-xl font-bold mb-4">نقاء كلين</h3>
+                    <div class="flex items-center space-x-3 space-x-reverse mb-6">
+                        <div class="bg-white rounded-full p-2 w-16 h-16">
+                            <img src="../asstes/img/logo.txt" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">نقاء كلين</h3>
+                            <p class="text-sm">نظافة احترافية</p>
+                        </div>
+                    </div>
                     <p class="text-gray-200 leading-relaxed mb-4">
-                        شركة رائدة في مجال خدمات النظافة الاحترافية في الرياض
+                        شركة رائدة في مجال خدمات النظافة الاحترافية في الرياض، نقدم أعلى معايير الجودة والاحترافية.
                     </p>
+                    <!-- Social Media -->
                     <div class="flex space-x-4 space-x-reverse">
-                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300" aria-label="فيسبوك">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300" aria-label="تويتر">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300" aria-label="إنستغرام">
                             <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300" aria-label="سناب شات">
+                            <i class="fab fa-snapchat-ghost"></i>
                         </a>
                     </div>
                 </div>
                 
+                <!-- Quick Links -->
                 <div>
-                    <h4 class="text-xl font-bold mb-4">روابط سريعة</h4>
-                    <ul class="space-y-2">
-                        <li><a href="../index.html" class="text-gray-200 hover:text-white transition duration-300">الرئيسية</a></li>
-                        <li><a href="../index.html#services" class="text-gray-200 hover:text-white transition duration-300">خدماتنا</a></li>
-                        <li><a href="../index.html#about" class="text-gray-200 hover:text-white transition duration-300">من نحن</a></li>
-                        <li><a href="../index.html#contact" class="text-gray-200 hover:text-white transition duration-300">اتصل بنا</a></li>
+                    <h4 class="text-xl font-bold mb-6">روابط سريعة</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">الرئيسية</a></li>
+                        <li><a href="#about" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">من نحن</a></li>
+                        <li><a href="#services" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">خدماتنا</a></li>
+                        <li><a href="#portfolio" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">مشاريعنا</a></li>
+                        <li><a href="blog/index.html" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">المدونة</a></li>
+                        <li><a href="#contact" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">اتصل بنا</a></li>
                     </ul>
                 </div>
                 
+                <!-- Services -->
                 <div>
-                    <h4 class="text-xl font-bold mb-4">تواصل معنا</h4>
-                    <ul class="space-y-3 text-gray-200">
-                        <li>
-                            <i class="fas fa-phone-alt ml-2"></i>
-                            <a href="tel:0592425077" class="hover:text-white transition duration-300">0592425077</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope ml-2"></i>
-                            <a href="mailto:info@naqaclean.com" class="hover:text-white transition duration-300">info@naqaclean.com</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt ml-2"></i>
-                            الرياض، المملكة العربية السعودية
-                        </li>
+                    <h4 class="text-xl font-bold mb-6">خدماتنا</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">تنظيف منازل</a></li>
+                        <li><a href="#services" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">تنظيف فلل</a></li>
+                        <li><a href="#services" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">تنظيف شقق</a></li>
+                        <li><a href="#services" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">تنظيف مجالس وسجاد</a></li>
+                        <li><a href="#services" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">تعقيم احترافي</a></li>
+                        <li><a href="#services" class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">تنظيف خزانات</a></li>
                     </ul>
                 </div>
+                
+                <!-- Newsletter -->
+<div class="p-4 ">
+  <h4 class="text-xl font-bold mb-6 text-white">موقعنا على الخريطة - رؤية 360°</h4>
+  <p class="text-gray-200 mb-4">استعرض الموقع من جميع الاتجاهات</p>
+  
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.837983982045!2d46.67529531500032!3d24.71355198409114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038f6ed1b9ef%3A0x7a4c2a68f1bbd4c1!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1697047634567!5m2!1sen!2seg"
+    class="w-full h-80 rounded-xl shadow-lg"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
             </div>
             
-            <div class="border-t border-white border-opacity-20 pt-6 text-center">
-                <p>&copy; 2024 نقاء كلين. جميع الحقوق محفوظة.</p>
+            <!-- Copyright -->
+            <div class="border-t border-white border-opacity-20 pt-8 text-center">
+                <p class="text-gray-200">
+                    &copy; 2024 نقاء كلين. جميع الحقوق محفوظة. 
+                    <a href="#" class="hover:text-white transition duration-300">سياسة الخصوصية</a> | 
+                    <a href="#" class="hover:text-white transition duration-300">الشروط والأحكام</a>
+                </p>
+                <p class="text-sm text-gray-300 mt-2">
+                    صُمم وطُور بـ <i class="fas fa-heart text-red-400 animate-pulse"></i> في الرياض
+                </p>
             </div>
         </div>
     </footer>
